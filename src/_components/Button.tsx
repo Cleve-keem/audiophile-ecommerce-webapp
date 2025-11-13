@@ -1,0 +1,34 @@
+import React from "react";
+
+enum Variant {
+  primary = "primary",
+  secondary = "secondary",
+  danger = "danger",
+  outline = "outline",
+}
+
+type ButtonProps = {
+  children: React.ReactNode;
+  className?: string;
+  variant?: Variant;
+};
+
+export default function Button({ children, className, variant }: ButtonProps) {
+  const variantClasses = {
+    primary:
+      "mt-8 bg-primary-orange text-secondary-white py-3 px-8 uppercase text-[13px] tracking-[1px] hover:bg-secondary-orange",
+    secondary:
+      "bg-secondary-orange text-secondary-white hover:bg-primary-orange",
+    danger: "bg-red-600 text-white hover:bg-red-700",
+    outline:
+      "bg-transparent border border-foreground text-foreground hover:bg-foreground hover:text-secondary-white",
+  };
+
+  return (
+    <button
+      className={` ${className}`}
+    >
+      {children}
+    </button>
+  );
+}

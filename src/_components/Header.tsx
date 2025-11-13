@@ -10,7 +10,7 @@ const navItems = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 bg-foreground text-primary font-family-manrope">
+    <header className="sticky top-0 z-50 bg-foreground text-primary font-family-manrope">
       <div className="w-full min-h-16 py-8 xlg:max-w-[1440px] mx-auto flex items-center">
         <div className="w-[95%] mx-auto">
           {/* MOBILE VIEW */}
