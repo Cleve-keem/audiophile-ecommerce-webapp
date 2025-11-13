@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+@import "tailwindcss";
+
+/* ===============================
+   LIGHT THEME (DEFAULT)
+=============================== */
+:root {
+  color-scheme: light;
+
+  --max-width: 1440px;
+
+  --main-background: #ffffff;
+  --hero-background: #000000;
+  --primary-grey: #fafafa;
+  --foreground: #000000;
+  --secondary-orange: #fbaf85;
+  --primary-orange: #d87d4a;
+  --dark: #000000;
+  --border-color: #979797;
+  --font-manrope: "Manrope", sans-serif;
+
+  --text-primary: #000000;
+  --text-secondary: #f1f1f1;
+  --overline-color: var(--primary-brown);
+  --sub-title-color: var(--secondary-brown);
+
+  --text-p: 15px;
+
+  --font-h1-mobile: 36px;
+
+  --font-h1: 56px;
+  --font-h2: 40px;
+  --font-h3: 32px;
+  --font-h4: 28px;
+  --font-h5: 24px;
+  --font-h6: 18px;
+  --font-overline: 14px;
+  --font-sub-title: 15px;
+
+  --line-spacing-h1-mobile: 40px;
+
+  --line-spacing-h1: 58px;
+  --line-spacing-h2: 44px;
+  --line-spacing-h3: 36px;
+  --line-spacing-h4: 38px;
+  --line-spacing-h5: 33px;
+  --line-spacing-h6: 24px;
+  --line-spacing-text: 25px;
+  --overline-spacing: 19px;
+  --sub-title-spacing: 25px;
+
+  --letter-spacing-h1-mobile: 1.29px;
+
+  --letter-spacing-h1: 2px;
+  --letter-spacing-h2: 1.5px;
+  --letter-spacing-h3: 1.15px;
+  --letter-spacing-h4: 2px;
+  --letter-spacing-h5: 1.7px;
+  --letter-spacing-h6: 1.3px;
+  --letter-spacing-overline: 10px;
+  --letter-spacing-sub-title: 1px;
+}
+
+/* ===============================
+   DARK THEME (SYSTEM PREFERENCE)
+=============================== */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-background: #000000;
+    --foreground: #101010;
+    --text-primary: #ffffff;
+  }
+}
+
+/* =======================
+    THEME 
+========================== */
+
+@theme {
+  /* BREAK POINTS */
+  --breakpoint-xs: 576px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 767px;
+  --breakpoint-xmd: 992px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xslg: 1199px;
+  --breakpoint-slg: 1200px;
+  --breakpoint-mlg: 1280px;
+  --breakpoint-xlg: 1440px;
+
+  /* WIDTHS */
+  --width-max: var(--max-width);
+
+  /* COLORS */
+  --color-background: var(--main-background);
+  --color-primary-orange: var(--primary-orange);
+  --color-secondary-orange: var(--secondary-orange);
+  --color-foreground: var(--foreground);
+  --color-hero-background: var(--hero-background);
+  --color-secondary-white: var(--text-secondary);
+  --color-primary: var(--text-primary);
+  --color-border: var(--border-color);
+
+  /* FONTS */
+  --font-family-manrope: var(--font-manrope);
+
+  /* HEADINGS */
+  --text-h1-mobile: var(--font-h1-mobile);
+
+  --text-h1: var(--font-h1);
+  --text-h2: var(--font-h2);
+  --text-h3: var(--font-h3);
+  --text-h4: var(--font-h4);
+  --text-h5: var(--font-h5);
+  --text-h6: var(--font-h6);
+  --text-p: var(--text-p);
+  --font-overline: var(--overline-size);
+
+  /* PARAGRAPHS */
+
+  /* LINE HEIGHTS */
+  --leading-h1-mobile: var(--line-spacing-h1-mobile);
+
+  --leading-h1: var(--line-spacing-h1);
+  --leading-h2: var(--line-spacing-h2);
+  --leading-h3: var(--line-spacing-h3);
+  --leading-h4: var(--line-spacing-h4);
+  --leading-h5: var(--line-spacing-h5);
+  --leading-h6: var(--line-spacing-h6);
+
+  --tracking-h1-mobile: var(--letter-spacing-h1-mobile);
+
+  --tracking-h1: var(--letter-spacing-h1);
+  --tracking-h2: var(--letter-spacing-h2);
+  --tracking-h3: var(--letter-spacing-h3);
+  --tracking-h4: var(--letter-spacing-h4);
+  --tracking-h5: var(--letter-spacing-h5);
+  --tracking-h6: var(--letter-spacing-h6);
+}
+
+/* ===============================
+   BASE STYLES
+=============================== */
+
+@layer base {
+  body {
+    background: var(--main-background);
+    color: var(--text-primary);
+    font-family: var(--font-manrope);
+    min-height: 100vh;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    line-height: var(--medium-heading-size);
+  }
+
+  p {
+    font-size: var(--text-p);
+    line-height: var(--text-line-spacing);
+  }
+}
