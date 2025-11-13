@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 @import "tailwindcss";
 
-/* ===============================
-   LIGHT THEME (DEFAULT)
-=============================== */
+/* LIGHT THEME (DEFAULT) */
 :root {
   color-scheme: light;
 
@@ -61,9 +59,7 @@
   --letter-spacing-sub-title: 1px;
 }
 
-/* ===============================
-   DARK THEME (SYSTEM PREFERENCE)
-=============================== */
+/* DARK THEME (SYSTEM PREFERENCE) */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -73,9 +69,7 @@
   }
 }
 
-/* =======================
-    THEME 
-========================== */
+/* THEME  */
 
 @theme {
   /* BREAK POINTS */
@@ -95,6 +89,7 @@
   /* COLORS */
   --color-background: var(--main-background);
   --color-primary-orange: var(--primary-orange);
+  --color-primary-grey: var(--primary-grey);
   --color-secondary-orange: var(--secondary-orange);
   --color-foreground: var(--foreground);
   --color-hero-background: var(--hero-background);
@@ -139,9 +134,7 @@
   --tracking-h6: var(--letter-spacing-h6);
 }
 
-/* ===============================
-   BASE STYLES
-=============================== */
+/* BASE STYLES */
 
 @layer base {
   body {

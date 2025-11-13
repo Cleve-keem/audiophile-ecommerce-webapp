@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 export default function Hero() {
   return (
     <section className="text-secondary-white h-[calc(100vh-91px)]">
@@ -21,9 +23,7 @@ export default function Hero() {
             made for the passionate music enthusiast.
           </p>
 
-          <button className="mt-8 bg-primary-orange text-secondary-white py-3 px-8 uppercase text-[13px] tracking-[1px] hover:bg-[#FBAF85]">
-            See Product
-          </button>
+          <Button variant="primary">See Product</Button>
         </div>
       </div>
     </section>

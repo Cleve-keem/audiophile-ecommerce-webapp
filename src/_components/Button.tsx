@@ -1,6 +1,7 @@
 import React from "react";
 
 enum Variant {
+  default = "default",
   primary = "primary",
   secondary = "secondary",
   danger = "danger",
@@ -10,11 +11,17 @@ enum Variant {
 type ButtonProps = {
   children: React.ReactNode;
   className?: string;
-  variant?: Variant;
+  variant?: keyof typeof Variant;
 };
 
-export default function Button({ children, className, variant }: ButtonProps) {
-  const variantClasses = {
+export default function Button({
+  children,
+  className,
+  variant = "default",
+}: ButtonProps) {
+  const variants = {
+    default:
+      "text-black hover:text-primary-orange py-2 px-6 uppercase text-[13px] tracking-[1px]",
     primary:
       "mt-8 bg-primary-orange text-secondary-white py-3 px-8 uppercase text-[13px] tracking-[1px] hover:bg-secondary-orange",
     secondary:
@@ -25,10 +32,6 @@ export default function Button({ children, className, variant }: ButtonProps) {
   };
 
   return (
-    <button
-      className={` ${className}`}
-    >
-      {children}
-    </button>
+    <button className={`${variants[variant]} ${className}`}>{children}</button>
   );
 }
