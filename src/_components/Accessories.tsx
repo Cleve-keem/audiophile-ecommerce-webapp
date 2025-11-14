@@ -25,8 +25,8 @@ export default function Accessories() {
         <div className="w-[90%] mx-auto py-20">
           <ul className="grid grid-cols-1 gap-y-5">
             {accessories.map((accessory) => (
-              <li key={accessory.name} className="mb-10 pb-6 rounded-2xl">
-                <div className="flex flex-col items-center text-center bg-primary-grey">
+              <li key={accessory.name} className="mb-10 pb-6">
+                <div className="flex flex-col items-center text-center bg-primary-grey rounded-xl">
                   <div className="w-24 relative -top-12">
                     <img
                       src={accessory.image}
