@@ -29,7 +29,7 @@ export default function Button({
       "bg-btn-black text-secondary-white hover:bg-hover-dark uppercase py-2 px-6",
     danger: "bg-red-600 text-white hover:bg-red-700 uppercase",
     outline:
-      "bg-transparent border border-foreground text-foreground hover:bg-foreground hover:text-secondary-white",
+      "bg-transparent border py-2 px-6 uppercase text-[13px] border-foreground text-foreground hover:bg-foreground hover:text-secondary-white",
   };
 
   return (
