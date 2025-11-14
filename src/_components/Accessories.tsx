@@ -80,10 +80,20 @@ export default function Accessories() {
                   <h1 className="text-h4 text-foreground tracking-h1">
                     ZX7 SPEAKER
                   </h1>
-                  <Button
-                    variant="outline"
-                    className="mt-6 border-2 border-foreground text-foreground hover:bg-foreground hover:text-secondary-white"
-                  >
+                  <Button variant="outline" className="mt-6">
+                    See Product
+                  </Button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>
+                  <img src="/images/image-earphone2.png" alt="earphone image" />
+                </div>
+                <div>
+                  <h4>YX1 EARPHONES</h4>
+                  <Button variant="outline" className="mt-6">
                     See Product
                   </Button>
                 </div>
