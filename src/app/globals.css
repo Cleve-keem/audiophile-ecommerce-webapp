@@ -10,6 +10,8 @@
   --main-background: #ffffff;
   --hero-background: #000000;
   --primary-grey: #fafafa;
+  --btn-black: #101010;
+  --hover-dark: #4c4c4c;
   --foreground: #000000;
   --secondary-orange: #fbaf85;
   --primary-orange: #d87d4a;
@@ -96,6 +98,8 @@
   --color-secondary-white: var(--text-secondary);
   --color-primary: var(--text-primary);
   --color-border: var(--border-color);
+  --color-btn-black: var(--btn-black);
+  --color-hover-black: var(--hover-dark)
 
   /* FONTS */
   --font-family-manrope: var(--font-manrope);
@@ -154,6 +158,13 @@
     color: var(--text-primary);
     text-transform: uppercase;
     line-height: var(--medium-heading-size);
+  }
+
+  img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   p {
