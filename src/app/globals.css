@@ -127,6 +127,9 @@
   --leading-h4: var(--line-spacing-h4);
   --leading-h5: var(--line-spacing-h5);
   --leading-h6: var(--line-spacing-h6);
+  --leading-overline: var(--overline-spacing);
+  --leading-text: var(--line-spacing-text);
+  --leading-sub-title: var(--sub-title-spacing);
 
   --tracking-h1-mobile: var(--letter-spacing-h1-mobile);
 
