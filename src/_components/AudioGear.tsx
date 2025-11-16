@@ -1,7 +1,7 @@
 export default function AudioGear() {
   return (
     <section className="bg-background">
-      <div className="w-[90%] mx-auto py-5 text-center">
+      <div className="w-[90%] mx-auto py-12 text-center mb-5">
         <div className="w-full">
           <img src="/images/audio-gear.png" alt="person wearing an earphone" />
         </div>

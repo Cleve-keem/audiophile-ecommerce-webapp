@@ -22,19 +22,6 @@ export default function Header() {
             <Logo />
             <nav className="flex-6 mx-5">
               <Navbar />
-              {/* 
-              <ul className="flex justify-center">
-                {navItems.map((item, id) => (
-                  <Link
-                    href={item.to}
-                    key={id}
-                    className="px-4 mx-2 uppercase text-secondary-white"
-                  >
-                    {item.title}
-                  </Link>
-                ))}
-              </ul>
-              */}
             </nav>
             <div className="flex justify-center ml-5">
               <img src="/icons/cart-icon.png" alt="cart icon" />

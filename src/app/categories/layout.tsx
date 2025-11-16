@@ -1,6 +1,9 @@
 "use client";
 
+import AudioGear from "@/_components/AudioGear";
+import Menu from "@/_components/Menu";
 import PageHeadline from "@/_components/PageHeadline";
+import ProductList from "@/_components/Products";
 import { usePathname } from "next/navigation";
 import React from "react";
 
@@ -15,6 +18,10 @@ export default function CategoriesLayout({
     <div>
       <PageHeadline title={title} />
       <div>{children}</div>
+      <>
+        <Menu />
+        <AudioGear />
+      </>
     </div>
   );
 }

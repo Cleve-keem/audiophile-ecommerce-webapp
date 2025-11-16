@@ -59,7 +59,7 @@
   --letter-spacing-h5: 1.7px;
   --letter-spacing-h6: 1.3px;
   --letter-spacing-overline: 10px;
-  --letter-spacing-sub-title: 1px;
+  --letter-spacing-subtitle: 1px;
 }
 
 /* DARK THEME (SYSTEM PREFERENCE) */
@@ -142,6 +142,8 @@
   --tracking-h4: var(--letter-spacing-h4);
   --tracking-h5: var(--letter-spacing-h5);
   --tracking-h6: var(--letter-spacing-h6);
+  --tracking-overline: var(--letter-spacing-overline);
+  --tracking-subtitle: var(--letter-spacing-subtitle);
 }
 
 /* BASE STYLES */
