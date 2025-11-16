@@ -5,8 +5,8 @@ export default function AudioGear() {
         <div className="w-full">
           <img src="/images/audio-gear.png" alt="person wearing an earphone" />
         </div>
-        <h5 className="text-h4 text-foreground mt-6 mb-4 uppercase px-4">
-          Bringing you the <span className="text-primary-orange">best</span>{" "}
+        <h5 className="text-h4 text-primary mt-6 mb-4 uppercase px-4">
+          Bringing you the <span className="text-primary-orange"> best </span>
           audio gear
         </h5>
         <p className="text-[15px] leading-text px-3 text-primary/50">
