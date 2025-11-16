@@ -2,7 +2,7 @@ import Link from "next/link";
 
 type LogoProps = {
   className?: string;
-  size: string;
+  size?: string;
 };
 
 export default function Logo({ className, size = "24" }: LogoProps) {
