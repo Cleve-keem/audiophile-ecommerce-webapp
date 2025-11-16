@@ -1,12 +1,5 @@
-import Link from "next/link";
 import Logo from "./Logo";
-
-const navItems = [
-  { title: "Home", to: "/" },
-  { title: "Headphones", to: "/headphones" },
-  { title: "Speakers", to: "/speakers" },
-  { title: "Earphones", to: "/earphones" },
-];
+import Navbar from "./Navbar";
 
 export default function Header() {
   return (
@@ -28,6 +21,8 @@ export default function Header() {
           <div className="hidden xl:flex items-center">
             <Logo />
             <nav className="flex-6 mx-5">
+              <Navbar />
+              {/* 
               <ul className="flex justify-center">
                 {navItems.map((item, id) => (
                   <Link
@@ -39,6 +34,7 @@ export default function Header() {
                   </Link>
                 ))}
               </ul>
+              */}
             </nav>
             <div className="flex justify-center ml-5">
               <img src="/icons/cart-icon.png" alt="cart icon" />
