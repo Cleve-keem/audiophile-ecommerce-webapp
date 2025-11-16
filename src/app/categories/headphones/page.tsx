@@ -44,7 +44,7 @@ export default function HeadphonesPage() {
                     {headphone.label}
                   </span>
                 )}
-                <h2 className="text-h4 tracking-subtitle text-text-dark">
+                <h2 className="text-h4 tracking-subtitle text-primary">
                   {headphone.name}
                 </h2>
                 <p className="leading-text text-[15px] text-white/50">
