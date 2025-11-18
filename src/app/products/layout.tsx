@@ -9,7 +9,7 @@ type Props = {
 export default function CategoriesLayout({ children }: Readonly<Props>) {
   return (
     <div>
-      {/* <PageTitle /> */}
+      <PageTitle />
       <>{children}</>
       <Menu />
       <AudioGear />
