@@ -18,6 +18,10 @@ export const getProductById = query({
 export const getProductByCategory = query({
   args: { category: v.string() },
   handler: async (ctx, args) => {
-    const pro await ctx.db.query("productTable");
+    const products = await ctx.db
+      .query("productTable")
+      .filter((q) => q.eq(q.field("category"), args.category));
+
+    return products;
   },
 });
