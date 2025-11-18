@@ -5,4 +5,5 @@ export type productSchema = {
   name: string;
   description: string;
   category: string;
+  price: number;
 };

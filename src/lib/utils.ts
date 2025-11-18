@@ -6,3 +6,7 @@ export function getProductsByCategory(category: string) {
     (product: productSchema) => product.category === category
   );
 }
+
+export function getProductsById(productId: string) {
+  return products.find((product: productSchema) => product.id === productId);
+}

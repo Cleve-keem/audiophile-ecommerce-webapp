@@ -5,6 +5,7 @@ import ProductCard from "@/components/ProductCard";
 import { getProductsByCategory } from "@/lib/utils";
 import PageTitle from "@/components/PageTitle";
 
+
 export default function CategoryPage({ params }: Readonly<any>) {
   const { category }: any = React.use(params) || {};
 

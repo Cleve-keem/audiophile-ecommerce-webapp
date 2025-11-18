@@ -1,9 +1,13 @@
 import AudioGear from "@/components/AudioGear";
 import Menu from "@/components/Menu";
-import PageTitle from "@/components/PageTitle";
 
 type Props = {
   children: React.ReactNode;
+};
+
+export const metadata = {
+  title: "Products Categories",
+  description: "Browse our product categories",
 };
 
 export default function CategoriesLayout({ children }: Readonly<Props>) {

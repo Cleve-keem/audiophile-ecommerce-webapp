@@ -36,7 +36,10 @@ export default function Menu() {
                 <h3 className="mt-4 text-xl font-bold text-foreground text-[15px] uppercase tracking-[1.07px]">
                   {category.name}
                 </h3>
-                <Button className="flex items-center" href={category.link}>
+                <Button
+                  className="flex items-center py-2 px-6"
+                  href={category.link}
+                >
                   <span className="inline-block mr-2">shop</span>
                   <img src="/icons/arrow-right.svg" alt="arrow-right icon" />
                 </Button>
