@@ -1,5 +1,5 @@
 export type productSchema = {
-  id: string;
+  _id: string;
   img: string;
   label?: string;
   name: string;

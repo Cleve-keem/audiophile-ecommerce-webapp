@@ -20,7 +20,8 @@ export const getProductByCategory = query({
   handler: async (ctx, args) => {
     const products = await ctx.db
       .query("productTable")
-      .filter((q) => q.eq(q.field("category"), args.category));
+      .filter((q) => q.eq(q.field("category"), args.category))
+      .collect();
 
     return products;
   },

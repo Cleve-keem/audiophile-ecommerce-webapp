@@ -2,7 +2,7 @@ import Button from "./Button";
 
 type ProductCardProps = {
   product: {
-    id: string;
+    _id: string;
     img: string;
     name: string;
     label?: string;
@@ -36,7 +36,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           {product.description}
         </p>
 
-        <Button variant="primary" href={`${product.category}/${product.id}`}>
+        <Button variant="primary" href={`${product.category}/${product._id}`}>
           See product
         </Button>
       </div>
