@@ -2,7 +2,7 @@ import Button from "./Button";
 
 export default function Hero() {
   return (
-    <section className="text-secondary-white h-[calc(100vh-91px)]">
+    <section className="text-secondary-white h-[calc(100vh-91px)] mb-10">
       <div className="relative h-full flex items-center">
         <div className="absolute -top-3 left-0 right-0 bottom-0 -z-10">
           <img
@@ -23,7 +23,9 @@ export default function Hero() {
             made for the passionate music enthusiast.
           </p>
 
-          <Button variant="primary">See Product</Button>
+          <Button variant="primary">
+            See Product
+          </Button>
         </div>
       </div>
     </section>
