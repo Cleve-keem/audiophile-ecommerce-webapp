@@ -4,5 +4,5 @@ export type productSchema = {
   label?: string;
   name: string;
   description: string;
-  category?: string;
+  category: string;
 };
