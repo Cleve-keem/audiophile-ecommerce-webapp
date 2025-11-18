@@ -4,17 +4,17 @@ const categories = [
   {
     image: "/images/image-headphone.png",
     name: "Earphones",
-    link: "/products/headphone",
+    link: "/products/headphones",
   },
   {
     image: "/images/image-speaker.png",
     name: "Speaker",
-    link: "/products/speaker",
+    link: "/products/speakers",
   },
   {
     image: "/images/image-earphone.png",
     name: "Earphone",
-    link: "/products/earphone",
+    link: "/products/earphones",
   },
 ];
 
