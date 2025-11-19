@@ -8,5 +8,5 @@ export function getProductsByCategory(category: string) {
 }
 
 export function getProductsById(productId: string) {
-  return products.find((product: productSchema) => product.id === productId);
+  return products.find((product: productSchema) => product._id === productId);
 }
