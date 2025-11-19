@@ -16,7 +16,7 @@ export default function CategoryPage({ params }: Readonly<any>) {
   );
 
   if(products === undefined){
-    return <p>Loading.</p>
+    return <p>Loading...</p>
   }
 
   console.log(products);
