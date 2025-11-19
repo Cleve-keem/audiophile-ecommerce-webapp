@@ -2,7 +2,7 @@ import { productSchema } from "@/types/product";
 
 export const products: productSchema[] = [
   {
-    id: "xx99-mark-two-headphones",
+   _id: "xx99-mark-two-headphones",
     img: "/images/headphones/headphone1.png",
     label: "New Product",
     name: "XX99 Mark II Headphones",
@@ -12,7 +12,7 @@ export const products: productSchema[] = [
     price: 2999,
   },
   {
-    id: "xx99-mark-one-headphones",
+    _id: "xx99-mark-one-headphones",
     img: "/images/headphones/headphone2.png",
     name: "XX99 Mark I Headphones",
     description:
@@ -21,7 +21,7 @@ export const products: productSchema[] = [
     price: 1750,
   },
   {
-    id: "xx59-headphones",
+    _id: "xx59-headphones",
     img: "/images/headphones/headphone3.png",
     name: "XX59 Headphones",
     description:
@@ -30,7 +30,7 @@ export const products: productSchema[] = [
     price: 899,
   },
   {
-    id: "yx1-wireless-earphones",
+    _id: "yx1-wireless-earphones",
     img: "/images/earphones/earphone.png",
     label: "New Product",
     name: "YX1 WIRELESS EARPHONES",
@@ -40,7 +40,7 @@ export const products: productSchema[] = [
     price: 599,
   },
   {
-    id: "zx9-speaker",
+    _id: "zx9-speaker",
     img: "/images/speakers/speaker1.png",
     label: "New Product",
     name: "ZX9 speaker",
@@ -50,7 +50,7 @@ export const products: productSchema[] = [
     price: 4500,
   },
   {
-    id: "zx7-speaker",
+    _id: "zx7-speaker",
     img: "/images/speakers/speaker2.png",
     name: "ZX7 SPEAKER",
     description:
